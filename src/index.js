@@ -2,11 +2,11 @@
   class WhatsAppLink extends HTMLElement {
     constructor (){
       super();
-      this.shadowRoot = this.attachShadow({mode: 'open'});
+      this.shadow = this.attachShadow({mode: 'open'});
     }
     connectedCallback (){
       const phone = this.getAttribute('phone');
-      shadowRoot.innerHTML = `
+      this.shadow.innerHTML = `
         <style>
           a {
             display:block;
