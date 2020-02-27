@@ -1,6 +1,7 @@
 ((customElements) => {
   class WhatsAppLink extends HTMLElement {
     constructor (){
+      super();
       this.shadowRoot = this.attachShadow({mode: 'open'});
     }
     connectedCallback (){
